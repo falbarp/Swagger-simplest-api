@@ -69,8 +69,66 @@
           ],
           "responses": {}
         }
+      },
+      "/multiplication/{a}&{b}": {
+        "get": {
+          "description": "Choose two numbers",
+          "operationId": "ADD",
+          "parameters": [
+            {
+              "name": "a",
+              "in": "path",
+              "description": "First number. Default Value <code>10</code>.",
+              "required": true,
+              "default": "10",
+              "enum": [
+                "10"
+              ]
+            },
+            {
+              "name": "b",
+              "in": "path",
+              "description": "Second number. Default Value <code>2</code>.",
+              "required": true,
+              "default": "2",
+              "enum": [
+                "2"
+              ]
+            }
+          ],
+          "responses": {}
+        }
+      },
+      "/division/{a}&{b}": {
+        "get": {
+          "description": "Choose two numbers",
+          "operationId": "ADD",
+          "parameters": [
+            {
+              "name": "a",
+              "in": "path",
+              "description": "First number. Default Value <code>9</code>.",
+              "required": true,
+              "default": "9",
+              "enum": [
+                "9"
+              ]
+            },
+            {
+              "name": "b",
+              "in": "path",
+              "description": "Second number. Default Value <code>3</code>.",
+              "required": true,
+              "default": "3",
+              "enum": [
+                "3"
+              ]
+            }
+          ],
+          "responses": {}
+        }
       }
-
+      
 
     }   
 }
